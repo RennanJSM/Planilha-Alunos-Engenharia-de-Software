@@ -33,7 +33,7 @@ def main():
         service = build("sheets", "v4", credentials=creds)
         sheet = service.spreadsheets()
         spreadsheet_id = "1nlo1snNRkceOu3bNBBSOnV-DS4Rmu9rpG5Pfs52uGvU"
-        range_name = "engenharia_de_software!A4:J27"  
+        range_name = "engenharia_de_software!A4:H27"  
 
         result = sheet.values().get(spreadsheetId=spreadsheet_id, range=range_name).execute()
         values = result.get("values", [])
